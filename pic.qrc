@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>images/delete.png</file>
+        <file>images/double.png</file>
+        <file>images/excel.png</file>
+        <file>images/input.png</file>
+        <file>images/logo.png</file>
+        <file>images/open.png</file>
+        <file>images/output.png</file>
+        <file>images/select.png</file>
+        <file>images/update.png</file>
+    </qresource>
+</RCC>

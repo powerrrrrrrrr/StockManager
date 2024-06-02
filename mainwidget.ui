@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1059</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>样品管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pic.qrc">
+    <normaloff>:/pic/images/double.png</normaloff>:/pic/images/double.png</iconset>
+  </property>
+  <widget class="QTableWidget" name="dataTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>1041</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>1041</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1,1,1,3">
+    <item>
+     <widget class="QPushButton" name="inputBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>样品入库</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/input.png</normaloff>:/pic/images/input.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="outputBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>样品出库</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/output.png</normaloff>:/pic/images/output.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dropBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>删除样品</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/delete.png</normaloff>:/pic/images/delete.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updataBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>更新数据</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/update.png</normaloff>:/pic/images/update.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="loadDataBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>导出数据</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/open.png</normaloff>:/pic/images/open.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>1041</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="8,1,2,1">
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 10, 255)</string>
+      </property>
+      <property name="text">
+       <string>样品编号：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="numLineEdit">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="dataSelectBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0, 170, 255);
+color:rgb(255, 255, 255);
+border-radius:3px;</string>
+      </property>
+      <property name="text">
+       <string>数据查询</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pic.qrc">
+        <normaloff>:/pic/images/select.png</normaloff>:/pic/images/select.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>
